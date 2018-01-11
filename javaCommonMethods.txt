@@ -1,3 +1,6 @@
+Every java program looks for public static void main in order
+to successfully compile.
+
 String variable = "This is a string";
 variable.contains("This"); <--- True
 variable.contains("THIS"); <--- false
@@ -31,6 +34,7 @@ boolean example = false || false || true <---- True
 boolean example = false && false && true <---- false
 
 boolean doIfTrue; <--- establishes variable exists so you can use
+
 it inside block of code
 *** WHEN YOU ESTABLISH A BOOLEAN, BY DEFAULT IT SETS TO FALSE ***
 do{
@@ -39,4 +43,58 @@ do{
         do this code if its true;
     }
 }while(doIfTrue.equals(false));
+
+private <-- makes values hidden/immutable.
+public final <--- makes value public/immutable
+public static <-- Makes value public/immutable?
+static = const
+
+public static int CONSTANTSAREALWAYSINCAPS = 1;
+
+General rule is to start with private until you need to go public.
+
+CLI ---->>  jshell == python == irb
+
+jshell
+/open FileName.java
+Filename newVariableName = new classname
+newVariableName.methodOrVariableToRunOrCallOrReference <---runs method, gives value, output, etc
+
+incrementing
+
+int number = 1;
+number += 1;
+=> 2
+
+int number = 2;
+number++
+
+=> 2
+computer computes
+=> 3
+
+int number = 3;
+++number
+
+=> 4
+=================================================
+You can have multiple methods with the same name.
+the name for it is "overloaded method"
+
+public void age(){
+    System.out.println("We don't have your age.\n");
+}
+
+public void age(int age){
+    System.out.println("We see you are %i years old.\n", age);
+}
+================================================
+
+in jshell, you can find the different inputs for examples like
+above.
+
+getAge.age(  then press tab returns
+getAge.age   but if you  press shift+tab
+getAge.age()
+getAge.age(int age)
 
