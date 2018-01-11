@@ -1,0 +1,42 @@
+String variable = "This is a string";
+variable.contains("This"); <--- True
+variable.contains("THIS"); <--- false
+
+upperedWords = variable.toUpperCase();
+upperedWords.contains("THIS"); <---- True
+loweredWords = variable.toLowerCase(); <--- No capitalized letters
+
+OR FOR 1 LINE METHOD
+variable.toUpperCase().contains("THIS"); <--- TRUE
+
+variable.equals("This is a string"); <-- True
+variable.equalsIgnoreCase("THIS IS A STRING"); <--- True
+
+Console console = System.console();
+console.printf("Hello World"); <--- console prints "Hello World"
+console.readLine("Ask me a question: ");
+The console waits for input from the user with readLine
+
+
+String answer = console.readLine("The answer is: ");
+Gives the input a variable name
+
+String number = console.readLine("How old are you? ");
+int age = number.parseInt(number); 
+
+The above 2 lines turns the string "number" into an integer "age"
+that you can now do mathematical stuff with.
+
+boolean example = false || false || true <---- True
+boolean example = false && false && true <---- false
+
+boolean doIfTrue; <--- establishes variable exists so you can use
+it inside block of code
+*** WHEN YOU ESTABLISH A BOOLEAN, BY DEFAULT IT SETS TO FALSE ***
+do{
+    Some code in here;
+    if(doIfTrue){
+        do this code if its true;
+    }
+}while(doIfTrue.equals(false));
+
